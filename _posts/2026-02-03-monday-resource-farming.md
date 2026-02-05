@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Monday Tips: Maximizing Resource Farming"
 date: 2026-02-03
 categories: daily-tips

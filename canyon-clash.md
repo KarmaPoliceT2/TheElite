@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Canyon Clash
 permalink: /canyon-clash/
 ---

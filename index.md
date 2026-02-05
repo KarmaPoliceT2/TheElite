@@ -1,6 +1,5 @@
 ---
-layout: home
-title: Home
+layout: default
 ---
 
 # Welcome to [t0p1]The Elite
