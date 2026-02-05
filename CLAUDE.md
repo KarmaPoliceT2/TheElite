@@ -31,10 +31,10 @@ Each category page (`canyon-clash.md`, `daily-tips.md`, `events.md`) dynamically
 All category pages use this pattern to list posts:
 
 ```liquid
-{% assign posts = site.categories['category-name'] | sort: 'date' | reverse %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'category-name'" | sort: 'date' | reverse %}
 ```
 
-**Important:** Use bracket notation `['category-name']` instead of dot notation when category names contain hyphens. Dot notation fails with hyphenated names in Liquid.
+**Why this approach:** Using `site.posts` with `where_exp` is more robust than `site.categories['category-name']` because it always returns an array (empty if no matches) rather than `nil` when a category doesn't exist.
 
 ## Post Creation Guidelines
 
