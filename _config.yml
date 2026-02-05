@@ -1,2 +1,15 @@
-theme: minima
+theme: merlot
 title: "[t0p1]The Elite Suggested Tactics"
+description: "Strategy guides, daily tips, and tactics for Last Z: Shooter Run alliance members"
+baseurl: ""
+url: ""
+
+# Navigation
+header_pages:
+  - daily-tips.md
+  - events.md
+  - canyon-clash.md
+  - about.md
+
+# Collections for better organization
+permalink: /:categories/:year/:month/:day/:title:output_ext
