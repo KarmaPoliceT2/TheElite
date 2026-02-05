@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Canyon Clash Week 5: Desert Ruins Strategy"
 date: 2026-02-02
 categories: canyon-clash

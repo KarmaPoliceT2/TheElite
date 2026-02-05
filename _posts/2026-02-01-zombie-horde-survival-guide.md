@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Event Guide: Zombie Horde Survival"
 date: 2026-02-01
 categories: events
