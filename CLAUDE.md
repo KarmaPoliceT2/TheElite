@@ -28,13 +28,13 @@ Each category page (`canyon-clash.md`, `daily-tips.md`, `events.md`) dynamically
 
 ### Liquid Template Pattern
 
-All category pages use this pattern to handle empty/null categories gracefully:
+All category pages use this pattern to list posts:
 
 ```liquid
-{% assign posts = site.categories.CATEGORY | default: empty | sort: 'date' | reverse %}
+{% assign posts = site.categories.CATEGORY | sort: 'date' | reverse %}
 ```
 
-The `| default: empty` filter prevents "Cannot sort a null object" errors when no posts exist in a category.
+Note: `site.categories.CATEGORY` returns an empty array when no posts exist, so no null checking is needed.
 
 ## Post Creation Guidelines
 
