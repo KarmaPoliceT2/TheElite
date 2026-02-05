@@ -16,7 +16,7 @@ Each day of the week has specific events, bonuses, or focus areas in Last Z: Sho
 
 ## Posts by Day
 
-{% assign daily_posts = site.categories.daily-tips | sort: 'date' | reverse %}
+{% assign daily_posts = site.categories.daily-tips | default: empty | sort: 'date' | reverse %}
 {% for post in daily_posts %}
 ### [{{ post.title }}]({{ post.url | relative_url }})
 **{{ post.date | date: "%B %d, %Y" }}** - {{ post.excerpt | strip_html | truncatewords: 30 }}

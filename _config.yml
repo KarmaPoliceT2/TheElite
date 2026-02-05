@@ -4,6 +4,9 @@ description: "Strategy guides, daily tips, and tactics for Last Z: Shooter Run a
 baseurl: "/TheElite"
 url: ""
 
+# Allow future-dated posts (for publishing strategies ahead of time)
+future: true
+
 # Navigation
 header_pages:
   - daily-tips.md

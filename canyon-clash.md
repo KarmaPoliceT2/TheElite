@@ -10,7 +10,7 @@ Stay ahead in Canyon Clash with our weekly updated strategies and tactics!
 
 ## This Week's Strategy
 
-{% assign clash_posts = site.categories.canyon-clash | sort: 'date' | reverse %}
+{% assign clash_posts = site.categories.canyon-clash | default: empty | sort: 'date' | reverse %}
 {% assign latest_clash = clash_posts | first %}
 
 {% if latest_clash %}
